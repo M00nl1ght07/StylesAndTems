@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="TextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">#2E105D</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">87dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:radius">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAppearance">@style/TextViewStyle</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">#2E105D</item>
+        <item name="android:colorPrimaryDark">#15308D</item>
+        <item name="android:colorPrimary">#15308D</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+    </style>
+
+    <style name="TwoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">#98218E</item>
+        <item name="android:colorPrimaryDark">#98218E</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+    </style>
+</resources>
